@@ -1,0 +1,17 @@
+from turtle import Turtle
+def drawsquare(t,length):
+    for count in range(4):
+        t.forward(length)
+        t.left(90)
+    t.penup()
+    t.goto(150, 0)  
+    t.pendown()
+
+def hexagon(t,length):
+    for count in range(6):
+        t.forward(length)
+        t.left(60)
+
+t=Turtle()
+drawsquare(t,30)
+hexagon(t,30)
