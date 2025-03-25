@@ -1,0 +1,9 @@
+import math
+x=int(input("Enter value of x:"))
+n=int(input("enter no of terms:"))
+sum=0.0
+for i in range(0,n,2):
+    fac=math.factorial(i)
+    sum+=((x**2)/fac)
+print(sum)
+
